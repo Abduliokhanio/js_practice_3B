@@ -91,5 +91,6 @@ function deleteGif(){
     }
 
    fetch(`${BASE_URL}/gifs/${id_of_targeted_button}`,configObj )
+   debugger
    event.target.parentElement.remove()
 }

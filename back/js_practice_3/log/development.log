@@ -4554,3 +4554,201 @@ Processing by GifsController#index as */*
 Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1127)
 
 
+Started DELETE "/gifs/56" for 127.0.0.1 at 2020-10-12 15:14:36 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"56", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (3.3ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 56]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 34ms (ActiveRecord: 11.8ms | Allocations: 2448)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:14:51 -0500
+Processing by GifsController#index as HTML
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 971)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:15:39 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 973)
+
+
+Started DELETE "/gifs/58" for 127.0.0.1 at 2020-10-12 15:15:40 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"58", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 58], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (3.3ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 58]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 32ms (ActiveRecord: 11.5ms | Allocations: 2448)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:15:44 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv", "gif"=>{"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (1.1ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3rd gif"], ["gif_add", "https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"], ["created_at", "2020-10-12 20:15:44.823292"], ["updated_at", "2020-10-12 20:15:44.823292"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 21ms (Views: 0.6ms | ActiveRecord: 9.9ms | Allocations: 2524)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:15:46 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv", "gif"=>{"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.3ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3rd gif"], ["gif_add", "https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"], ["created_at", "2020-10-12 20:15:46.617717"], ["updated_at", "2020-10-12 20:15:46.617717"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 21ms (Views: 0.6ms | ActiveRecord: 10.5ms | Allocations: 2524)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:15:46 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv", "gif"=>{"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.4ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3rd gif"], ["gif_add", "https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"], ["created_at", "2020-10-12 20:15:46.790862"], ["updated_at", "2020-10-12 20:15:46.790862"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 30ms (Views: 0.6ms | ActiveRecord: 11.0ms | Allocations: 2524)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:15:46 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv", "gif"=>{"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.3ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3rd gif"], ["gif_add", "https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"], ["created_at", "2020-10-12 20:15:46.960514"], ["updated_at", "2020-10-12 20:15:46.960514"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 27ms (Views: 0.4ms | ActiveRecord: 10.7ms | Allocations: 2524)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:15:47 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv", "gif"=>{"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (1.1ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3rd gif"], ["gif_add", "https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"], ["created_at", "2020-10-12 20:15:47.112542"], ["updated_at", "2020-10-12 20:15:47.112542"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 24ms (Views: 0.8ms | ActiveRecord: 9.1ms | Allocations: 2490)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:15:47 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv", "gif"=>{"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.3ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3rd gif"], ["gif_add", "https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"], ["created_at", "2020-10-12 20:15:47.282676"], ["updated_at", "2020-10-12 20:15:47.282676"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 23ms (Views: 0.4ms | ActiveRecord: 11.6ms | Allocations: 2524)
+
+
+Started DELETE "/gifs/60" for 127.0.0.1 at 2020-10-12 15:15:50 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"60", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 60], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (3.3ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 60]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 41ms (ActiveRecord: 12.0ms | Allocations: 2448)
+
+
+Started DELETE "/gifs/59" for 127.0.0.1 at 2020-10-12 15:15:52 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"59", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (3.6ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 59]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 35ms (ActiveRecord: 11.8ms | Allocations: 2448)
+
+
+Started DELETE "/gifs/61" for 127.0.0.1 at 2020-10-12 15:15:53 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"61", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 61], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (3.4ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 61]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 34ms (ActiveRecord: 11.4ms | Allocations: 2450)
+
+
+Started DELETE "/gifs/62" for 127.0.0.1 at 2020-10-12 15:15:53 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"62", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 62], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (1.0ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 62]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 8.1ms | Allocations: 2448)
+
+
+Started DELETE "/gifs/63" for 127.0.0.1 at 2020-10-12 15:15:53 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"63", "gif"=>{}}
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (3.3ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 63]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 31ms (ActiveRecord: 10.9ms | Allocations: 2448)
+
+
+Started DELETE "/gifs/64" for 127.0.0.1 at 2020-10-12 15:15:54 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"64", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (3.2ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 64]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 25ms (ActiveRecord: 11.0ms | Allocations: 2448)
+
+

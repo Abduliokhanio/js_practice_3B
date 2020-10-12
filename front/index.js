@@ -78,14 +78,18 @@ function fetchGifs(){
 
 //Delete <3rd Step>
 function deleteGif(){
-    //event.preventDefault()
+    event.preventDefault()
     let targeted_button = event.target
-    let id_of_targeted_button = parseInt(targeted_button.dataset.id)
-
-    const configObj = {
-        method: 'DELETE' 
-    }
+    let id_of_targeted_button = parseInt(targeted_button.id)
     
-    fetch(`${BASE_URL}/gifs/${id_of_targeted_button}`,configObj )
-    this.location.reload()
+    const configObj = {
+        method: 'DELETE',
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        } 
+    }
+
+   fetch(`${BASE_URL}/gifs/${id_of_targeted_button}`,configObj )
+   event.target.parentElement.remove()
 }

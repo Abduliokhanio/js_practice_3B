@@ -13,7 +13,7 @@ class Gif{
         <h3>${this.id}) ${this.title}</h3>
         <img src=${this.gif_add} alt=${this.title} class = "gif"><br>
         ${this.gif_add}
-
+        <button class= "delete-button" data-id = ${this.id} onclick="deleteGif()">Delete User</button>
         `
     }
 

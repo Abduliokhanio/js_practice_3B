@@ -4752,3 +4752,668 @@ Processing by GifsController#destroy as JSON
 Completed 204 No Content in 25ms (ActiveRecord: 11.0ms | Allocations: 2448)
 
 
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:16:57 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv", "gif"=>{"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.5ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3rd gif"], ["gif_add", "https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"], ["created_at", "2020-10-12 20:16:57.194685"], ["updated_at", "2020-10-12 20:16:57.194685"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 21ms (Views: 0.4ms | ActiveRecord: 10.8ms | Allocations: 2525)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:16:57 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv", "gif"=>{"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.6ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3rd gif"], ["gif_add", "https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"], ["created_at", "2020-10-12 20:16:57.454232"], ["updated_at", "2020-10-12 20:16:57.454232"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 29ms (Views: 0.4ms | ActiveRecord: 12.4ms | Allocations: 2524)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:16:57 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv", "gif"=>{"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.3ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3rd gif"], ["gif_add", "https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"], ["created_at", "2020-10-12 20:16:57.648946"], ["updated_at", "2020-10-12 20:16:57.648946"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 33ms (Views: 0.4ms | ActiveRecord: 12.7ms | Allocations: 2524)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:17:07 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1284)
+
+
+Started DELETE "/gifs/66" for 127.0.0.1 at 2020-10-12 15:17:09 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"66", "gif"=>{}}
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (3.8ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 66]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 30ms (ActiveRecord: 12.2ms | Allocations: 2448)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:18:55 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"", "gif_add"=>"", "gif"=>{"title"=>"", "gif_add"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.5ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["gif_add", ""], ["created_at", "2020-10-12 20:18:55.053106"], ["updated_at", "2020-10-12 20:18:55.053106"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 33ms (Views: 0.4ms | ActiveRecord: 12.1ms | Allocations: 2523)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:18:57 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"", "gif_add"=>"", "gif"=>{"title"=>"", "gif_add"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.6ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["gif_add", ""], ["created_at", "2020-10-12 20:18:57.234835"], ["updated_at", "2020-10-12 20:18:57.234835"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 46ms (Views: 1.0ms | ActiveRecord: 15.3ms | Allocations: 2524)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:18:57 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"", "gif_add"=>"", "gif"=>{"title"=>"", "gif_add"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.4ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["gif_add", ""], ["created_at", "2020-10-12 20:18:57.402090"], ["updated_at", "2020-10-12 20:18:57.402090"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 25ms (Views: 0.6ms | ActiveRecord: 10.2ms | Allocations: 2523)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:18:57 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"", "gif_add"=>"", "gif"=>{"title"=>"", "gif_add"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.4ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["gif_add", ""], ["created_at", "2020-10-12 20:18:57.570331"], ["updated_at", "2020-10-12 20:18:57.570331"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 23ms (Views: 0.6ms | ActiveRecord: 10.4ms | Allocations: 2523)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:18:57 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"", "gif_add"=>"", "gif"=>{"title"=>"", "gif_add"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.2ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["gif_add", ""], ["created_at", "2020-10-12 20:18:57.727232"], ["updated_at", "2020-10-12 20:18:57.727232"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 24ms (Views: 0.5ms | ActiveRecord: 10.2ms | Allocations: 2523)
+
+
+Started DELETE "/gifs/70" for 127.0.0.1 at 2020-10-12 15:18:59 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"70", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (3.3ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 70]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 33ms (ActiveRecord: 12.6ms | Allocations: 2448)
+
+
+Started DELETE "/gifs/68" for 127.0.0.1 at 2020-10-12 15:19:00 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"68", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (1.0ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 68]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 30ms (ActiveRecord: 10.0ms | Allocations: 2448)
+
+
+Started DELETE "/gifs/72" for 127.0.0.1 at 2020-10-12 15:19:02 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"72", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (3.2ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 72]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 34ms (ActiveRecord: 11.8ms | Allocations: 2448)
+
+
+Started DELETE "/gifs/65" for 127.0.0.1 at 2020-10-12 15:19:03 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"65", "gif"=>{}}
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 65], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (3.3ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 65]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 32ms (ActiveRecord: 10.3ms | Allocations: 2448)
+
+
+Started DELETE "/gifs/67" for 127.0.0.1 at 2020-10-12 15:19:04 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"67", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (1.0ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 67]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 22ms (ActiveRecord: 9.4ms | Allocations: 2448)
+
+
+Started DELETE "/gifs/69" for 127.0.0.1 at 2020-10-12 15:19:05 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"69", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (3.2ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 69]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 28ms (ActiveRecord: 12.4ms | Allocations: 2448)
+
+
+Started DELETE "/gifs/71" for 127.0.0.1 at 2020-10-12 15:19:06 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"71", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (0.9ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 71]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 26ms (ActiveRecord: 8.6ms | Allocations: 2449)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:19:12 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv", "gif"=>{"title"=>"3rd gif", "gif_add"=>"https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.2ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "3rd gif"], ["gif_add", "https://64.media.tumblr.com/a5180bfae3dcc8c61ea47967cf6cf6e4/da3b610803b0087c-f8/s400x600/667fb3d8f0ffe08ec54ece6f8fb9af7b43f1b5fc.gifv"], ["created_at", "2020-10-12 20:19:12.108552"], ["updated_at", "2020-10-12 20:19:12.108552"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 32ms (Views: 0.7ms | ActiveRecord: 11.1ms | Allocations: 2524)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:19:24 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"wdsd", "gif_add"=>"https://media.tenor.com/images/fa9775da859923c4cc65608ada8e8d81/tenor.gif", "gif"=>{"title"=>"wdsd", "gif_add"=>"https://media.tenor.com/images/fa9775da859923c4cc65608ada8e8d81/tenor.gif"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.7ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "wdsd"], ["gif_add", "https://media.tenor.com/images/fa9775da859923c4cc65608ada8e8d81/tenor.gif"], ["created_at", "2020-10-12 20:19:24.725855"], ["updated_at", "2020-10-12 20:19:24.725855"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 30ms (Views: 0.9ms | ActiveRecord: 11.5ms | Allocations: 2524)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:20:14 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"wdsd4", "gif_add"=>"https://media.tenor.com/images/fa9775da859923c4cc65608ada8e8d81/tenor.gif", "gif"=>{"title"=>"wdsd4", "gif_add"=>"https://media.tenor.com/images/fa9775da859923c4cc65608ada8e8d81/tenor.gif"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (1.3ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "wdsd4"], ["gif_add", "https://media.tenor.com/images/fa9775da859923c4cc65608ada8e8d81/tenor.gif"], ["created_at", "2020-10-12 20:20:14.804112"], ["updated_at", "2020-10-12 20:20:14.804112"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 39ms (Views: 0.7ms | ActiveRecord: 13.0ms | Allocations: 2492)
+
+
+Started DELETE "/gifs/74" for 127.0.0.1 at 2020-10-12 15:20:16 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"74", "gif"=>{}}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (4.0ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 74]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 32ms (ActiveRecord: 12.4ms | Allocations: 2448)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:22:40 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms | Allocations: 1129)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:22:50 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 1129)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:34:19 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms | Allocations: 1147)
+
+
+Started GET "/todos/undefined" for 127.0.0.1 at 2020-10-12 15:34:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/todos/undefined"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/todos/undefined" for 127.0.0.1 at 2020-10-12 15:34:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/todos/undefined"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:35:11 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.2ms | Allocations: 1128)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:35:41 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 1129)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:35:49 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.4ms | Allocations: 1129)
+
+
+Started GET "/todos/73" for 127.0.0.1 at 2020-10-12 15:35:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/todos/73"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:36:57 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 1128)
+
+
+Started GET "/todos/73" for 127.0.0.1 at 2020-10-12 15:36:59 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/todos/73"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:37:11 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 1128)
+
+
+Started GET "/todos/75" for 127.0.0.1 at 2020-10-12 15:37:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/todos/75"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:37:38 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 1128)
+
+
+Started GET "/todos/73" for 127.0.0.1 at 2020-10-12 15:37:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/todos/73"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:37:58 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 1128)
+
+
+Started GET "/gifs/73" for 127.0.0.1 at 2020-10-12 15:38:01 -0500
+Processing by GifsController#show as */*
+  Parameters: {"id"=>"73"}
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+Completed 200 OK in 10ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 792)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:38:17 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.9ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.9ms | Allocations: 1129)
+
+
+Started GET "/gifs/73" for 127.0.0.1 at 2020-10-12 15:38:19 -0500
+Processing by GifsController#show as */*
+  Parameters: {"id"=>"73"}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 777)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:38:33 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.2ms | Allocations: 1131)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:38:35 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"", "gif_add"=>"", "gif"=>{"title"=>"", "gif_add"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.4ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["gif_add", ""], ["created_at", "2020-10-12 20:38:35.940405"], ["updated_at", "2020-10-12 20:38:35.940405"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 22ms (Views: 0.4ms | ActiveRecord: 10.8ms | Allocations: 2523)
+
+
+Started DELETE "/gifs/76" for 127.0.0.1 at 2020-10-12 15:38:39 -0500
+Processing by GifsController#destroy as JSON
+  Parameters: {"id"=>"76", "gif"=>{}}
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[36mGif Destroy (1.1ms)[0m  [1m[31mDELETE FROM "gifs" WHERE "gifs"."id" = ?[0m  [["id", 76]]
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:39:in `destroy'
+Completed 204 No Content in 51ms (ActiveRecord: 12.1ms | Allocations: 2448)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:38:57 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 1129)
+
+
+Started GET "/gifs/75" for 127.0.0.1 at 2020-10-12 15:39:08 -0500
+Processing by GifsController#show as */*
+  Parameters: {"id"=>"75"}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 777)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:39:32 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1129)
+
+
+Started GET "/gifs/73" for 127.0.0.1 at 2020-10-12 15:39:34 -0500
+Processing by GifsController#show as */*
+  Parameters: {"id"=>"73"}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+Completed 200 OK in 10ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 777)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:39:49 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 1129)
+
+
+Started GET "/gifs/73" for 127.0.0.1 at 2020-10-12 15:39:50 -0500
+Processing by GifsController#show as */*
+  Parameters: {"id"=>"73"}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+Completed 200 OK in 9ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 777)
+
+
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:39:51 -0500
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"", "gif_add"=>"", "gif"=>{"title"=>"", "gif_add"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (1.2ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["gif_add", ""], ["created_at", "2020-10-12 20:39:51.763505"], ["updated_at", "2020-10-12 20:39:51.763505"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 31ms (Views: 0.9ms | ActiveRecord: 9.3ms | Allocations: 2489)
+
+
+Started GET "/gifs" for 127.0.0.1 at 2020-10-12 15:44:02 -0500
+Processing by GifsController#index as */*
+  [1m[36mGif Load (0.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  ↳ app/controllers/gifs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 1283)
+
+
+Started GET "/gifs/73" for 127.0.0.1 at 2020-10-12 15:44:03 -0500
+Processing by GifsController#show as */*
+  Parameters: {"id"=>"73"}
+  [1m[36mGif Load (0.1ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs" WHERE "gifs"."id" = ? LIMIT ?[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/controllers/gifs_controller.rb:45:in `set_gif'
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 777)
+
+
+Started PATCH "/todos/" for 127.0.0.1 at 2020-10-12 15:44:08 -0500
+Started POST "/gifs" for 127.0.0.1 at 2020-10-12 15:44:08 -0500
+  
+ActionController::RoutingError (No route matches [PATCH] "/todos"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Processing by GifsController#create as JSON
+  Parameters: {"title"=>"", "gif_add"=>"", "gif"=>{"title"=>"", "gif_add"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[36mGif Create (3.6ms)[0m  [1m[32mINSERT INTO "gifs" ("title", "gif_add", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["gif_add", ""], ["created_at", "2020-10-12 20:44:08.192051"], ["updated_at", "2020-10-12 20:44:08.192051"]]
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gifs_controller.rb:21:in `create'
+Completed 201 Created in 34ms (Views: 0.4ms | ActiveRecord: 13.1ms | Allocations: 2522)
+
+

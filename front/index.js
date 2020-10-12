@@ -76,6 +76,55 @@ function fetchGifs(){
 
 }
 
+//Update 
+function editGif(){
+    event.preventDefault()
+    const id = event.target.id
+    fetch(BASE_URL + `/gifs/${id}`)
+        .then(response => response.json())
+        .then(gif => {
+            let gifForm = document.getElementById("gif-form")
+            gifForm.innerHTML += 
+            `
+            
+                EDIT FORM
+                <form>
+                <div id= ${gif.id}>
+                    Title: <input type="text" id = "title" value=${gif.title}><br>
+                    Gif: <input type="text" id = "gif_add" value=${gif.gif_add}><br>
+                    <input type = "submit" value = "Update Gif">
+                </div>
+                    </form>
+            
+            `
+            document.getElementById("gif-form").addEventListener('submit', updateTodo)
+        })
+}
+
+function updateTodo(){
+    event.preventDefault()
+    const id = event.target.id
+    debugger
+    let title = document.getElementById("title").value;
+    let gif_add = document.getElementById("gif_add").value;
+
+    let gif = {
+        title: title,
+        gif_add: gif_add
+    }
+
+    const configObj = {
+        method: 'PATCH',
+        headers:{
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(gif)
+    }
+    debugger
+    fetch(BASE_URL + `/gifs/${id}`, configObj)
+}
+
 //Delete <3rd Step>
 function deleteGif(){
     event.preventDefault()
@@ -91,6 +140,5 @@ function deleteGif(){
     }
 
    fetch(`${BASE_URL}/gifs/${id_of_targeted_button}`,configObj )
-   debugger
    event.target.parentElement.remove()
 }

@@ -18,19 +18,19 @@ function createForm(){
     let gifForm = document.getElementById("gif-form")
     gifForm.innerHTML += 
     `
-    <form>
+    <form id='new-gif'>
         Title: <input type="text" id = "title"><br>
         Gif: <input type="text" id = "gif_add"><br>
         <input type = "submit" value = "Create Gif">
     </form>
     `
-    eventFormListener()
+    eventFormListener('new-gif', gifFormSubmission);
 }
 
 //add an event listener
-function eventFormListener(){
-    let gifForm = document.getElementById("gif-form")
-    gifForm.addEventListener("submit", gifFormSubmission)
+function eventFormListener(elementId = 'new-gif', formSubmission){
+    let gifForm = document.getElementById(elementId)
+    gifForm.addEventListener("submit", formSubmission)
 }
 
 function gifFormSubmission(){
@@ -56,7 +56,7 @@ function gifFormSubmission(){
     .then(resp => resp.json())
     .then(gif => {
         let g = new Gif(gif.id, gif.title, gif.gif_add)
-        g.renderGif()
+        g.appendGif()
     })
 
 
@@ -70,7 +70,7 @@ function fetchGifs(){
         .then(gifs => {
             for (const gif of gifs){
                 let g = new Gif(gif.id, gif.title, gif.gif_add)
-                g.renderGif();
+                g.appendGif();
             }
         })
 
@@ -88,25 +88,26 @@ function editGif(){
             `
             
                 EDIT FORM
-                <form>
+                <form id='edit-gif'>
                 <div id= ${gif.id}>
-                    Title: <input type="text" id = "title" value=${gif.title}><br>
-                    Gif: <input type="text" id = "gif_add" value=${gif.gif_add}><br>
+                    Title: <input type="text" id = "edit_title" value="${gif.title}"><br>
+                    Gif: <input type="text" id = "edit_gif_add" value="${gif.gif_add}"><br>
+                    <input type='hidden' id = 'edit_gif_id' value="${gif.id}">
                     <input type = "submit" value = "Update Gif">
                 </div>
                     </form>
             
             `
-            document.getElementById("gif-form").addEventListener('submit', updateTodo)
+
+            eventFormListener('edit-gif', updateGif);
         })
 }
 
-function updateTodo(){
+function updateGif(event){
     event.preventDefault()
-    const id = event.target.id
-    debugger
-    let title = document.getElementById("title").value;
-    let gif_add = document.getElementById("gif_add").value;
+    let id = document.getElementById('edit_gif_id').value;
+    let title = document.getElementById("edit_title").value;
+    let gif_add = document.getElementById("edit_gif_add").value;
 
     let gif = {
         title: title,
@@ -121,8 +122,11 @@ function updateTodo(){
         },
         body: JSON.stringify(gif)
     }
-    debugger
-    fetch(BASE_URL + `/gifs/${id}`, configObj)
+    
+    fetch(BASE_URL + `/gifs/${id}`, configObj).then(gif => {
+        let g = new Gif(id,title, gif_add)
+        g.replaceGif();
+    })
 }
 
 //Delete <3rd Step>
